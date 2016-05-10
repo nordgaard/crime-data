@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Description</th>
+    <th>District</th>
+    <th>Resolution</th>
+  </tr>
+  <% @crimes.each do |crime| %>
+  <tr>
+    <td><%= crime["category"] %></td> 
+    <td><%= crime["descript"] %></td> 
+    <td><%= crime["pddistrict"] %></td> 
+    <td><%= crime["resolution"] %></td> 
+  </tr>
+  <%end %>
+</table>
